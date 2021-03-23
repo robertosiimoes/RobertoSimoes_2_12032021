@@ -17,7 +17,10 @@
 /* --- 01 - Général --- */
 
 	html {
+		color: #000000;
 		font-family: Raleway, sans-serif;
+		font-size: 16px;
+		font-weight: 300;
 	}
 
 /* --- 01 - Général --- */
