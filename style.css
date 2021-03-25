@@ -21,6 +21,14 @@
 		--light: #FFFFFF;
 	}
 
+    *, *::before, *::after{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
 	html {
 		color: var(--dark);
 		font-family: Raleway, sans-serif;
@@ -29,13 +37,17 @@
 	}
 
 		body {
-			padding: 0;
+			padding: 0; 
 			margin: 0;
 		}
 
 		.l-grid {
 			padding: 0 50px;
 		}
+
+        .o-title--lv2 {
+            margin-bottom: 20px;
+        }
 
 /* --- 01 - Général --- */
 
@@ -148,6 +160,29 @@
 
 /* --- 03 - Sections --- */
 
+    /* HOSTING */
 
+        .o-hosting__container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+            .o-hosting__content,
+            .o-hosting__sidebar {
+                background-color: var(--grey-light);
+                border-radius: 18px;
+                padding: 35px;
+            }
+
+            .o-hosting__content {
+                width: calc(100% - 420px - 40px);
+            }
+
+            .o-hosting__sidebar {
+                width: 420px;
+            }
+
+    /* END HOSTING */
 
 /* --- 03 - Sections --- */
