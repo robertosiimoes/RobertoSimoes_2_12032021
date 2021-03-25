@@ -160,6 +160,41 @@
 
 /* --- 03 - Sections --- */
 
+    /* CARD */
+
+        .o-card {
+            background-color: var(--light);
+            border-radius: 18px;
+            display: flex;
+        }
+
+            .o-card__photo {
+                max-width: 100%;
+            }
+
+                .o-card__photo img {
+                    border-radius: 18px 18px 0 0;
+                    height: 100%;
+                    max-height: 100%;
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+            .o-card--bordered {
+                padding: 5px;
+                margin-bottom: 30px;
+            }
+
+            .o-card--col {
+                flex-flow: column wrap;
+            }
+
+            .o-card--row {
+                flex-flow: row wrap;
+            }
+
+    /* END CARD */
+
     /* HOSTING */
 
         .o-hosting__container {
@@ -178,6 +213,20 @@
             .o-hosting__content {
                 width: calc(100% - 420px - 40px);
             }
+
+                .o-hosting__box {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
+
+                    .o-hosting__box .o-card {
+                        width: 246px;
+                    }
+
+                        .o-hosting__box .o-card__photo {
+                            max-height: 115px;
+                        }
 
             .o-hosting__sidebar {
                 width: 420px;
