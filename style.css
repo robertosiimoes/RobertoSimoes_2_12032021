@@ -1,10 +1,6 @@
 /*
 	--- Summary ---
 
-		Blue color : #0065FC;
-		Blue light color : #DEEBFF;
-		Grey light color : #F2F2F2;
-
 		01 - Général
 		02 - Layouts
 		03 - Sections
@@ -16,8 +12,17 @@
 
 /* --- 01 - Général --- */
 
+	:root {
+		--blue : #0065FC;
+		--blue-darken :#00327e;
+		--blue-light : #DEEBFF;
+		--grey-light : #F2F2F2;
+		--dark: #000000;
+		--light: #FFFFFF;
+	}
+
 	html {
-		color: #000000;
+		color: var(--dark);
 		font-family: Raleway, sans-serif;
 		font-size: 16px;
 		font-weight: 300;
@@ -28,14 +33,84 @@
 			margin: 0;
 		}
 
+		.l-grid {
+			padding: 0 50px;
+		}
+
 /* --- 01 - Général --- */
 
 
 
 /* --- 02 - Layouts --- */
 
+	.l-header {
+		background-color: var(--light);
+	}
+
+		.l-header__container {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.l-header__logo {
+			width: 95px;
+			height: 30px;
+		}
+
+			.l-nav {
+				display: flex;
+				flex-flow: row wrap;
+				list-style-type: none;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+
+				.l-nav__item {
+					display: block;
+				}
+
+					.l-nav__item a {
+						color: var(--dark);
+						display: block;
+						padding: 50px 28px;
+						text-decoration: none;
+					}
+
+						.l-nav__item a:hover,
+						.l-nav__item a[data-state="is-active"]:hover,
+						.l-nav__item a[data-state="is-cta"]:hover {
+							background-color: var(--blue-light);
+							color: var(--blue-darken);
+							transition: all ease-in-out 450ms;
+						}
+
+					.l-nav__item a[data-state="is-active"] {
+						color: var(--blue);
+						position: relative;
+					}
+
+						.l-nav__item a[data-state="is-active"]::before {
+							content: "";
+							display: block;
+							height: 2px;
+							width: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background-color: var(--blue);
+						}
+
+					.l-nav__item a[data-state="is-cta"] {
+						color: var(--blue);
+						font-weight: 600;
+					}
+
+
 	.l-footer {
-		background-color: #F2F2F2;
+		background-color: var(--grey-light);
 	}
 
 		.l-footer__container {
@@ -58,12 +133,12 @@
 
 				.l-footer__list ol li a {
 					text-decoration: none;
-					color: #000000;
+					color: var(--dark);
 					transition: color ease 350ms;
 				}
 
 				.l-footer__list ol li a:hover {
-					color: #0065FC;
+					color: var(--blue);
 					transition: color ease 350ms;
 				}
 
@@ -72,4 +147,7 @@
 
 
 /* --- 03 - Sections --- */
+
+
+
 /* --- 03 - Sections --- */

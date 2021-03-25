@@ -20,17 +20,19 @@
 	<body>
 		<!-- HEADER -->
 		<header class="l-header">
-			<picture class="l-header__logo">
-				<source srcset="images/logo/logo-reservia.svg" media="(min-width: 967px)">
-				<img src="images/logo/logo-reservia@3x.png" alt="Logo Reservia">
-			</picture>
-			<nav class="l-header__nav">
-				<ol class="l-nav">
-					<li class="l-nav__item"><a href="#o-hosting">Hébergements</a></li>
-					<li class="l-nav__item"><a href="#o-activities">Activités</a></li>
-					<li class="l-nav__item"><a href="#">S'inscrire</a></li>
-				</ol>
-			</nav>
+			<div class="l-header__container l-grid">
+				<picture class="l-header__logo">
+					<source srcset="images/logo/logo-reservia.svg" media="(min-width: 967px)">
+					<img src="images/logo/logo-reservia@3x.png" alt="Logo Reservia">
+				</picture>
+				<nav class="l-header__nav">
+					<ol class="l-nav">
+						<li class="l-nav__item"><a href="#o-hosting" data-state="is-active">Hébergements</a></li>
+						<li class="l-nav__item"><a href="#o-activities">Activités</a></li>
+						<li class="l-nav__item"><a href="#" data-state="is-cta">S'inscrire</a></li>
+					</ol>
+				</nav>
+			</div>
 		</header>
 
 		<!-- SEARCHING -->
@@ -43,14 +45,14 @@
 
 		<!-- HOSTING -->
 		<section id="o-hosting" class="o-hosting">
-			<div class="o-hosting__container">
+			<div class="o-hosting__container l-grid">
 				<h2 class="o-title--lv2">Hébergements  Marseille</h2>
 				<div class="o-hosting__content">
 					<!-- Card 01 -->
 					<a class="o-card--col-bordered" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
-							<img src="#" alt="Auberge la Cannebière">
+							<source srcset="images/hosting/4_small/auberge-la-cannebiere__small.jpg" media="(min-width: 967px)">
+							<img src="images/hosting/3_medium/auberge-la-cannebiere__medium.jpg" alt="Auberge la Cannebière">
 						</picture>
 						<div class="o-card__content">
 							<h3 class="o-card__title">Auberge la Cannebière</h3>
@@ -67,7 +69,7 @@
 					<!-- Card 02 -->
 					<a class="o-card__bordered--col" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/hotel-du-port__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Hôtel du port">
 						</picture>
 						<div class="o-card__content">
@@ -85,7 +87,7 @@
 					<!-- Card 03 -->
 					<a class="o-card__bordered--col" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/hotel-les-mouettes__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Hôtel Les mouettes">
 						</picture>
 						<div class="o-card__content">
@@ -103,7 +105,7 @@
 					<!-- Card 04 -->
 					<a class="o-card__bordered--col" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/hotel-de-la-mer__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Hôtel de la mer">
 						</picture>
 						<div class="o-card__content">
@@ -121,7 +123,7 @@
 					<!-- Card 05 -->
 					<a class="o-card__bordered--col" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/auberge-le-panier__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Auberge Le Panier">
 						</picture>
 						<div class="o-card__content">
@@ -139,7 +141,7 @@
 					<!-- Card 06 -->
 					<a class="o-card__bordered--col" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/hotel-chez-amina__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Hôtel chez Amina">
 						</picture>
 						<div class="o-card__content">
@@ -163,7 +165,7 @@
 					<!-- Card 01 -->
 					<a class="o-card__bordered--row" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/hotel-le-soleil-du-matin__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Hôtel Le soleil du matin">
 						</picture>
 						<div class="o-card__content">
@@ -181,7 +183,7 @@
 					<!-- Card 02 -->
 					<a class="o-card__bordered--row" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/au-coeur-de-leau-chambre-hotes__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Au coeur de l'eau Chambres d'hôtes">
 						</picture>
 						<div class="o-card__content">
@@ -199,7 +201,7 @@
 					<!-- Card 03 -->
 					<a class="o-card__bordered--row" href="#">
 						<picture class="o-card__photo">
-							<source srcset="#" media="(min-width: 967px)">
+							<source srcset="images/hosting/4_small/hotel-tout-bleu-et-blanc__small.jpg" media="(min-width: 967px)">
 							<img src="#" alt="Hôtel Tout bleu et Blanc">
 						</picture>
 						<div class="o-card__content">
@@ -221,11 +223,11 @@
 		<!-- ACTIVITIES -->
 		<section id="o-activities" class="o-activities">
 			<h2 class="o-title--lv2">Activités à Marseille</h2>
-			<div class="o-activities__container">
+			<div class="o-activities__container l-grid">
 				<!-- Card 01 -->
 				<a class="o-card__col--bordered" href="#">
 					<picture class="o-card__photo">
-						<source srcset="#" media="(min-width: 967px)">
+						<source srcset="images/hosting/4_small/hotel-du-port__small.jpg" media="(min-width: 967px)">
 						<img src="#" alt="Hôtel du port">
 					</picture>
 					<div class="o-card__content">
@@ -246,7 +248,7 @@
 
 		<!-- FOOTER -->
 		<footer class="l-footer">
-			<div class="l-footer__container">
+			<div class="l-footer__container l-grid">
 				<div class="l-footer__list">
 					<h4 class="o-title--lv4">A propos</h4>
 					<ol>
