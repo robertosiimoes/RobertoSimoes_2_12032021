@@ -200,6 +200,10 @@
                 margin-bottom: 30px;
             }
 
+            .o-card--full {
+                max-width: 300px;
+            }
+
             .o-card--col {
                 flex-flow: column wrap;
             }
@@ -258,5 +262,14 @@
             }
 
     /* END HOSTING */
+
+    /* ACTIVITIES */
+
+        .o-activities__box {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+    /* END ACTIVITIES */
 
 /* --- 03 - Sections --- */
