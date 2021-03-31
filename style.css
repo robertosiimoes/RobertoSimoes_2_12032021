@@ -77,6 +77,10 @@
 			/**/
 		}
 
+		.o-title--lv4 {
+			margin-bottom: 25px;
+		}
+
 
 	/* HEADER */
 
@@ -278,8 +282,10 @@
 		.o-card {
 			background-color: var(--light);
 			border-radius: 18px;
+			color: var(--dark);
 			display: flex;
 			transition: box-shadow ease 450ms;
+			text-decoration: none;
 		}
 
 		.o-card:hover {
@@ -287,56 +293,86 @@
 			transition: box-shadow ease 450ms;
 		}
 
-		.o-card__photo {
-			max-width: 100%;
-		}
+			/* CARDS ELEMENTS */
 
-		.o-card__photo img {
-			height: 100%;
-			max-height: 100%;
-			width: 100%;
-			max-width: 100%;
-		}
+				.o-card__box {
+					display: flex;
+					flex-flow: row wrap;
+				}
 
-		.o-card__content {
-			background-color: red;
-			padding: 12px;
-		}
+				.o-card__stars i {
+					color: var(--grey-star);
+				}
+		
+				.o-card__stars i.is-checked {
+					color: var(--blue);
+				}
 
-		.o-card__stars i {
-			color: var(--grey-star);
-		}
+			/* END CARDS ELEMENTS */
 
-		.o-card__stars i.is-checked {
-			color: var(--blue);
-		}
 
-		.o-card--bordered {
-			padding: 5px;
-			margin-bottom: 30px;
-		}
 
-		.o-card--full {
-			max-width: 300px;
-		}
+			/* CARDS VARIANTES */
 
-		.o-card--col {
-			flex-flow: column wrap;
-		}
+				.o-card--bordered { padding: 5px; margin-bottom: 30px; }
 
-		.o-card--col .o-card__photo img {
-			border-radius: 18px 18px 0 0;
-		}
+				.o-card--full { max-width: 300px; }
 
-		.o-card--row {
-			flex-flow: row wrap;
-		}
+				.o-card--col { flex-flow: column wrap; }
 
-		.o-card--row .o-card__photo img {
-			border-radius: 18px 0 0 18px;
-			height: 134px;
-			width: 127px;
-		}
+				.o-card--row { flex-flow: row wrap; }
+
+			/* END CARDS VARIANTES */
+
+
+
+			/* CARDS COLUMN */
+
+				.o-card--col .o-card__photo {
+					height: 100%;
+					max-height: 115px;
+					max-width: 100%;
+					width: 100%;
+				}
+		
+				.o-card--col .o-card__photo img {
+					height: 100%;
+					width: 100%;
+				}
+		
+				.o-card--col .o-card__content {
+					background-color: red;
+					height: calc(100% - 115px);
+					padding: 12px;
+					width: 100%;
+				}
+
+			/* END CARDS COLUMN */
+
+
+
+			/* CARDS ROW */
+
+				.o-card--col .o-card__photo img {
+					border-radius: 18px 18px 0 0;
+				}
+
+				.o-card--col .o-card__content {
+					border-radius: 0 0 18px 18px;
+				}
+
+				.o-card--row .o-card__photo img {
+					border-radius: 18px 0 0 18px;
+					height: 134px;
+					width: 127px;
+				}
+
+				.o-card--row .o-card__content {
+					background-color: red;
+					width: calc(100% - 127px);
+				}
+
+			/* END CARDS ROW */
 
 	/* END CARD */
 
