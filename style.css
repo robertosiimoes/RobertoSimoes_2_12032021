@@ -51,6 +51,7 @@
 	.l-grid {
 		padding: 0 50px;
 		max-width: 1440px;
+		margin: auto;
 	}
 
 /* --- 01 - Général --- */
@@ -163,8 +164,7 @@
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-between;
-			padding: 50px;
-			max-width: 1122px;
+			padding: 50px 317px 50px 50px;
 		}
 
 		.l-footer__list ol {
@@ -212,7 +212,8 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
-			margin: 40px 0 65px 0;
+			margin-top: 40px;
+			margin-bottom: 65px;
         }
 
 		.o-hosting__content,
@@ -257,17 +258,41 @@
 			width: 420px;
 		}
 
+			.o-sidebar__container {
+				margin-top: 20px;
+			}
+
+			.o-hosting__sidebar .o-card__content {
+				padding: 20px 20px 10px 20px;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: space-between;
+			}
+
+			.o-hosting__sidebar .o-card__text {
+				margin: 0;
+				margin-top: 10px;
+			}
+
     /* END HOSTING */
 
 
 
     /* ACTIVITIES */
 
-        .o-activities__box {
-            display: flex;
-            flex-flow: row wrap;
-			margin-top: 20px;
-        }
+		.o-activities {
+			margin-bottom: 20px;
+		}
+
+			.o-activities__box {
+				display: flex;
+				flex-flow: row wrap;
+				margin-top: 20px;
+			}
+
+				.o-activities .o-card {
+					margin-bottom: 40px;
+				}
 
     /* END ACTIVITIES */
 
@@ -308,6 +333,16 @@
 					color: var(--blue);
 				}
 
+				.o-card__title {
+					font-size: 16px;
+				}
+
+				.o-card__text {
+					margin: 0;
+					margin-top: 7px;
+					margin-bottom: 7px;
+				}
+
 			/* END CARDS ELEMENTS */
 
 
@@ -341,7 +376,7 @@
 				}
 		
 				.o-card--col .o-card__content {
-					background-color: red;
+					background-color: var(--light);
 					height: calc(100% - 115px);
 					padding: 12px;
 					width: 100%;
@@ -368,7 +403,7 @@
 				}
 
 				.o-card--row .o-card__content {
-					background-color: red;
+					background-color: var(--light);
 					width: calc(100% - 127px);
 				}
 
