@@ -248,14 +248,7 @@
 				}
 
 				.o-hosting__card {
-					background-color: var(--light);
-					border-radius: 18px;
-					color: var(--dark);
-					transition: box-shadow ease 450ms;
-					text-decoration: none;
-					padding: 5px;
-					margin-bottom: 30px;
-					width: 245px;
+					display: block;
 				}
 
 				.o-hosting__card:hover {
@@ -264,6 +257,14 @@
 				}
 
 				.o-hosting__card .o-card__box {
+					background-color: var(--light);
+					border-radius: 18px;
+					color: var(--dark);
+					transition: box-shadow ease 450ms;
+					text-decoration: none;
+					padding: 5px;
+					margin-bottom: 30px;
+					width: 245px;
 					display: flex;
 					flex-flow: row wrap;
 				}
