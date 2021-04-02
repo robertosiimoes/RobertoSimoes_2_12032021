@@ -255,8 +255,7 @@
 					text-decoration: none;
 					padding: 5px;
 					margin-bottom: 30px;
-					max-width: 300px;
-					width: 246px;
+					width: 245px;
 				}
 
 				.o-hosting__card:hover {
@@ -321,13 +320,30 @@
 					margin-top: 20px;
 				}
 
+				.o-sidebar__card {
+					background-color: var(--light);
+					border-radius: 18px;
+					color: var(--dark);
+					transition: box-shadow ease 450ms;
+					text-decoration: none;
+					padding: 5px;
+					margin-top: 20px;
+					width: 345px;
+				}
+
+				.o-sidebar__card .o-card__box {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-between;
+				}
+
 				.o-sidebar__card .o-card__content {
 					background-color: var(--light);
 					display: flex;
 					flex-flow: column wrap;
 					justify-content: space-between;
 					width: calc(100% - 127px);
-					padding: 10px 20px 10px 20px;	
+					padding: 10px 20px 10px 20px;
 				}
 
 				.o-sidebar__card .o-card__photo {
@@ -340,6 +356,10 @@
 					height: 100%;
 					width: 100%;
 					object-fit: cover;
+				}
+
+				.o-sidebar__card .o-card__title {
+					font-size: 16px;
 				}
 
 				.o-sidebar__card .o-card__text {
