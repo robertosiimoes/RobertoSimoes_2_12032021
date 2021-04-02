@@ -26,33 +26,33 @@
 					<img src="images/logo/logo-reservia@3x.png" alt="Logo Reservia">
 				</picture>
 				<nav class="l-header__nav">
-					<ol class="l-nav">
-						<li class="l-nav__item"><a href="#o-hosting" data-state="is-active">Hébergements</a></li>
-						<li class="l-nav__item"><a href="#o-activities">Activités</a></li>
-						<li class="l-nav__item"><a href="#" data-state="is-cta">S'inscrire</a></li>
+					<ol>
+						<li><a href="#o-hosting" data-state="is-active">Hébergements</a></li>
+						<li><a href="#o-activities">Activités</a></li>
+						<li><a href="#" data-state="is-cta">S'inscrire</a></li>
 					</ol>
 				</nav>
 			</div>
 		</header>
 
 		<!-- SEARCHING -->
-		<section class="o-search">
+		<!-- <section class="o-search">
 			<div class="o-search__container l-grid">
 				<h1 class="o-title__lv1">
 					Trouvez votre hébergement pour des vacances de rêve
 					<span>En plein centre ville ou en pleine nature</span>
 				</h1>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- HOSTING -->
 		<section id="o-hosting" class="o-hosting">
 			<div class="o-hosting__container l-grid">
 				<div class="o-hosting__content">
-					<h2 class="o-title--lv2">Hébergements  Marseille</h2>
+					<h2 class="o-hosting__title">Hébergements  Marseille</h2>
 					<div class="o-hosting__box">
 						<!-- Card 01 -->
-						<a class="o-card o-card--bordered o-card--col" href="#">
+						<a class="o-hosting__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/auberge-la-cannebiere__small.jpg" media="(min-width: 967px)">
@@ -74,7 +74,7 @@
 							</div>
 						</a>
 						<!-- Card 02 -->
-						<a class="o-card o-card--bordered o-card--col" href="#">
+						<a class="o-hosting__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/hotel-du-port__small.jpg" media="(min-width: 967px)">
@@ -96,7 +96,7 @@
 							</div>
 						</a>
 						<!-- Card 03 -->
-						<a class="o-card o-card--bordered o-card--col" href="#">
+						<a class="o-hosting__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/hotel-les-mouettes__small.jpg" media="(min-width: 967px)">
@@ -118,7 +118,7 @@
 							</div>
 						</a>
 						<!-- Card 04 -->
-						<a class="o-card o-card--bordered o-card--col" href="#">
+						<a class="o-hosting__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/hotel-de-la-mer__small.jpg" media="(min-width: 967px)">
@@ -140,7 +140,7 @@
 							</div>
 						</a>
 						<!-- Card 05 -->
-						<a class="o-card o-card--bordered o-card--col" href="#">
+						<a class="o-hosting__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/auberge-le-panier__small.jpg" media="(min-width: 967px)">
@@ -162,7 +162,7 @@
 							</div>
 						</a>
 						<!-- Card 06 -->
-						<a class="o-card o-card--bordered o-card--col" href="#">
+						<a class="o-hosting__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/hotel-chez-amina__small.jpg" media="(min-width: 967px)">
@@ -187,10 +187,13 @@
 					<a class="o-hosting__cta" href="#">Afficher plus</a>
 				</div>
 				<aside class="o-hosting__sidebar">
-					<h2 class="o-title--lv2">Les plus populaires</h2>
+					<h2 class="o-title--lv2">
+						<span>Les plus populaires</span>
+						<i class="fas fa-chart-line"></i>
+					</h2>
 					<div class="o-sidebar__container">
 						<!-- Card 01 -->
-						<a class="o-card o-card--bordered o-card--row" href="#">
+						<a class="o-sidebar__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/hotel-le-soleil-du-matin__small.jpg" media="(min-width: 967px)">
@@ -212,7 +215,7 @@
 							</div>
 						</a>
 						<!-- Card 02 -->
-						<a class="o-card o-card--bordered o-card--row" href="#">
+						<a class="o-sidebar__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/au-coeur-de-leau-chambre-hotes__small.jpg" media="(min-width: 967px)">
@@ -234,7 +237,7 @@
 							</div>
 						</a>
 						<!-- Card 03 -->
-						<a class="o-card o-card--bordered o-card--row" href="#">
+						<a class="o-sidebar__card" href="#">
 							<div class="o-card__box">
 								<picture class="o-card__photo">
 									<source srcset="images/hosting/4_small/hotel-tout-bleu-et-blanc__small.jpg" media="(min-width: 967px)">
@@ -261,11 +264,11 @@
 		</section>
 
 		<!-- ACTIVITIES -->
-		<section id="o-activities" class="o-activities">
+		<!-- <section id="o-activities" class="o-activities">
 			<div class="o-activities__container l-grid">
 				<h2 class="o-title--lv2">Activités à Marseille</h2>
 				<div class="o-activities__box">
-					<!-- Card 01 -->
+					Card 01
 					<a class="o-card o-card--full o-card--col" href="#">
 						<div class="o-card__box">
 							<picture class="o-card__photo">
@@ -277,7 +280,7 @@
 							</div>
 						</div>
 					</a>
-					<!-- Card 02 -->
+					Card 02
 					<a class="o-card o-card--full o-card--col" href="#">
 						<div class="o-card__box">
 							<picture class="o-card__photo">
@@ -289,7 +292,7 @@
 							</div>
 						</div>
 					</a>
-					<!-- Card 03 -->
+					Card 03
 					<a class="o-card o-card--full o-card--col" href="#">
 						<div class="o-card__box">
 							<picture class="o-card__photo">
@@ -301,7 +304,7 @@
 							</div>
 						</div>
 					</a>
-					<!-- Card 04 -->
+					Card 04
 					<a class="o-card o-card--full o-card--col" href="#">
 						<div class="o-card__box">
 							<picture class="o-card__photo">
@@ -313,7 +316,7 @@
 							</div>
 						</div>
 					</a>
-					<!-- Card 05 -->
+					Card 05
 					<a class="o-card o-card--full o-card--col" href="#">
 						<div class="o-card__box">
 							<picture class="o-card__photo">
@@ -325,7 +328,7 @@
 							</div>
 						</div>
 					</a>
-					<!-- Card 06 -->
+					Card 06
 					<a class="o-card o-card--full o-card--col" href="#">
 						<div class="o-card__box">
 							<picture class="o-card__photo">
@@ -339,7 +342,7 @@
 					</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 
 		<!-- FOOTER -->
