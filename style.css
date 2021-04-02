@@ -329,6 +329,7 @@
 					padding: 5px;
 					margin-top: 20px;
 					width: 345px;
+					display: block;
 				}
 
 				.o-sidebar__card .o-card__box {
