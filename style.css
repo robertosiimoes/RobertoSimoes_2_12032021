@@ -19,7 +19,7 @@
         --grey-star: #D8D8D8;
 		--grey-light : #F2F2F2;
 		--dark: #000000;
-        --dark-shadow: #a5a5a5;
+        --dark-shadow: #d5d5d5;
 		--light: #FFFFFF;
 	}
 
@@ -249,19 +249,26 @@
 
 				.o-hosting__card {
 					display: block;
+					text-decoration: none;
+					color: var(--dark);
 				}
 
-				.o-hosting__card:hover {
-					box-shadow: 0px 0px 15px var(--dark-shadow);
-					transition: box-shadow ease 450ms;
+				.o-hosting__card:hover .o-card__photo {
+					opacity: 0.85;
+					transition: all ease-in-out 450ms;
+				}
+
+				.o-hosting__card:hover .o-card__title,
+				.o-hosting__card:hover .o-card__text strong {
+					color: var(--blue);
+					transition: all ease-in-out 450ms;
 				}
 
 				.o-hosting__card .o-card__box {
 					background-color: var(--light);
 					border-radius: 18px;
-					color: var(--dark);
+					box-shadow: 0px 0px 15px var(--dark-shadow);
 					transition: box-shadow ease 450ms;
-					text-decoration: none;
 					padding: 5px;
 					margin-bottom: 30px;
 					width: 245px;
@@ -281,7 +288,6 @@
 				}
 
 				.o-hosting__card .o-card__content {
-					background-color: var(--light);
 					height: calc(100% - 115px);
 					padding: 12px;
 					width: 100%;
@@ -325,12 +331,23 @@
 					background-color: var(--light);
 					border-radius: 18px;
 					color: var(--dark);
-					transition: box-shadow ease 450ms;
+					transition: all ease 450ms;
 					text-decoration: none;
 					padding: 5px;
 					margin-top: 20px;
 					width: 345px;
 					display: block;
+				}
+
+				.o-sidebar__card:hover .o-card__photo {
+					opacity: 0.85;
+					transition: all ease-in-out 450ms;
+				}
+
+				.o-sidebar__card:hover .o-card__title,
+				.o-sidebar__card:hover .o-card__text strong {
+					color: var(--blue);
+					transition: all ease 450ms;
 				}
 
 				.o-sidebar__card .o-card__box {
