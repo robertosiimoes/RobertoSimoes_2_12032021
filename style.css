@@ -417,7 +417,6 @@
 			flex-flow: row wrap;
 			justify-content: space-between;
 			margin-top: 20px;
-			overflow: hidden;
 		}
 
 		.o-activities__box {
@@ -459,6 +458,10 @@
 		.o-activities__box .o-activities__card .o-card__content {
 			padding: 20px;
 			width: 100%;
+		}
+
+		.o-activities__card .o-card__title {
+			font-size: 16px;
 		}
 
 		.o-activities__box:nth-child(1) .o-activities__card .o-card__photo img,
