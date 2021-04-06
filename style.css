@@ -446,18 +446,19 @@
 			flex-flow: row wrap;
 		}
 
-		.o-activities__card .o-card__box,
-		.o-activities__box .o-activities__card .o-card__photo img {
-			border-radius: 18px 18px 0 0;
+		.o-activities__card .o-card__box {
+			border-radius: 0 0 18px 18px;
 		}
 
 		.o-activities__box .o-activities__card .o-card__photo img {
+			border-radius: 18px 18px 0 0;
 			width: 100%;
 			object-fit: cover;
 		}
 
 		.o-activities__box .o-activities__card .o-card__content {
 			padding: 20px;
+			width: 100%;
 		}
 
 		.o-activities__box:nth-child(1) .o-activities__card .o-card__photo img,
