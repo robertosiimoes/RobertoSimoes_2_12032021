@@ -246,6 +246,36 @@
 
 		/* --- 02 - Layouts --- */
 
+
+
+		/* --- 03 - Sections --- */
+		.o-activities__box:nth-child(odd) {
+			max-width: 50%;
+		}
+
+		.o-activities__box:nth-child(even) {
+			padding-left: 25px;
+			max-width: 66%;
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.o-activities__box:nth-child(even) .o-activities__card {
+			width: 50%;
+		}
+
+		.o-activities__box:nth-child(even) .o-activities__card:nth-child(odd) {
+			padding-right: 25px;
+		}
+
+		.o-activities__box:nth-child(even) .o-activities__card:nth-child(even) {
+			padding-left: 25px;
+		}
+
+		.o-activities__box:nth-child(even) .o-activities__card .o-card__photo img {
+			height: 390px !important;
+		}
+
 	}
 
 /* --- END 900 PX --- */
