@@ -12,6 +12,7 @@
 
 /* --- 01 - Général --- */
 
+
 	:root {
 		--blue : #0065FC;
 		--blue-darken :#00327e;
@@ -102,23 +103,19 @@
 		.l-header__container {
 			display: flex;
 			flex-flow: row wrap;
-			justify-content: space-between;
 			align-items: center;
 		}
 
 		.l-header__logo {
 			width: 95px;
 			height: 35px;
+			margin-right: auto;
 		}
 
 		.l-header__logo img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
-		}
-
-		.l-header__menu {
-			display: flex;
 		}
 
 		.l-header__nav ol {
@@ -416,7 +413,7 @@
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-between;
-			margin-top: 20px;
+			margin-top: 25px;
 		}
 
 		.o-activities__box {
@@ -434,7 +431,6 @@
 		.o-activities__card:hover .o-card__photo {
 			opacity: 0.85;
 			transition: all ease-in-out 450ms;
-			width: 100%;
 		}
 
 		.o-activities__card .o-card__box {
@@ -445,6 +441,12 @@
 			display: flex;
 			flex-flow: row wrap;
 			border-radius: 18px;
+		}
+
+		.o-activities__box .o-activities__card .o-card__photo {
+			width: 100%;
+			max-width: 100%;
+			display: block;
 		}
 
 		.o-activities__box .o-activities__card .o-card__photo img {

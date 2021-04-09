@@ -12,7 +12,7 @@
 
 /* --- 1365 PX --- */
 
-	@media screen and (max-width: 1365px) {
+	@media only screen and (max-width: 1365px) {
 
 		/* --- 01 - Général --- */
 
@@ -106,15 +106,15 @@
 
 /* --- 1200 PX --- */
 
-	@media screen and (max-width: 1200px) {
+	@media only screen and (max-width: 1200px) {
 
 		.o-activities__box:nth-child(odd) {
-			padding-right: 25px;
+			padding-right: 15px;
 			max-width: 33%;
 		}
 
 		.o-activities__box:nth-child(even) {
-			padding-left: 25px;
+			padding-left: 15px;
 			max-width: 66%;
 			display: flex;
 			flex-flow: row wrap;
@@ -125,15 +125,16 @@
 		}
 
 		.o-activities__box:nth-child(even) .o-activities__card:nth-child(odd) {
-			padding-right: 25px;
+			padding-right: 15px;
 		}
 
 		.o-activities__box:nth-child(even) .o-activities__card:nth-child(even) {
-			padding-left: 25px;
+			padding-left: 15px;
 		}
 
-		.o-activities__box:nth-child(even) .o-activities__card .o-card__photo img {
-			height: 390px !important;
+		.o-activities__box:nth-child(even) .o-activities__card .o-card__photo img,
+		.o-activities__box:nth-child(odd) .o-activities__card .o-card__photo img {
+			height: 300px !important;
 		}
 
 	}
@@ -144,7 +145,7 @@
 
 /* --- 1150 PX --- */
 
-	@media screen and (max-width: 1150px) {
+	@media only screen and (max-width: 1150px) {
 
 		/* --- 03 - Sections --- */
 
@@ -227,7 +228,7 @@
 
 /* --- 900 PX --- */
 
-	@media screen and (max-width: 900px) {
+	@media only screen and (max-width: 900px) {
 
 		/* --- 02 - Layouts --- */
 
@@ -249,32 +250,41 @@
 
 
 		/* --- 03 - Sections --- */
-		.o-activities__box:nth-child(odd) {
-			max-width: 50%;
-		}
 
-		.o-activities__box:nth-child(even) {
-			padding-left: 25px;
-			max-width: 66%;
-			display: flex;
-			flex-flow: row wrap;
-		}
+			.o-activities__card {
+				margin-bottom: 25px !important;
+			}
 
-		.o-activities__box:nth-child(even) .o-activities__card {
-			width: 50%;
-		}
+			.o-activities__card .o-card__box {
+				margin-bottom: 0px !important;
+			}
 
-		.o-activities__box:nth-child(even) .o-activities__card:nth-child(odd) {
-			padding-right: 25px;
-		}
+			.o-activities__box:nth-child(odd),
+			.o-activities__box:nth-child(even) {
+				max-width: 100%;
+			}
 
-		.o-activities__box:nth-child(even) .o-activities__card:nth-child(even) {
-			padding-left: 25px;
-		}
+			.o-activities__box:nth-child(even) .o-activities__card {
+				width: 100%;
+			}
 
-		.o-activities__box:nth-child(even) .o-activities__card .o-card__photo img {
-			height: 390px !important;
-		}
+			.o-activities__box:nth-child(even) .o-activities__card:nth-child(odd) {
+				padding-right: 0px !important;
+			}
+	
+			.o-activities__box:nth-child(even) .o-activities__card:nth-child(even) {
+				padding-left: 0px !important;
+			}
+
+			.o-activities__box:nth-child(odd) {
+				padding-right: 0px !important;
+			}
+
+			.o-activities__box:nth-child(even) {
+				padding-left: 0px !important;
+			}
+
+		/* --- 03 - Sections --- */
 
 	}
 
@@ -284,7 +294,7 @@
 
 /* --- 768 PX --- */
 
-	@media screen and (max-width: 768px) {
+	@media only screen and (max-width: 768px) {
 
 		/* --- 02 - Layouts --- */
 
@@ -393,29 +403,38 @@
 
 /* --- 600 PX --- */
 
-	@media screen and (max-width: 600px) {
+	@media only screen and (max-width: 600px) {
 
 		/* --- 03 - Sections --- */
 
 			.o-hosting__card {
 				width: 100% !important;
 			}
-	
+
 			.o-hosting__card:nth-child(odd) {
 				padding-right: 0;
 			}
-	
+
 			.o-hosting__card:nth-child(even) {
 				padding-left: 0;
 			}
-	
+
 			.o-hosting__card .o-card__box {
 				margin-bottom: 10px;
 			}
-	
+
 			.o-hosting__cta {
 				display: block;
 				margin-top: 25px;
+			}
+
+			.o-activities__box:nth-child(even) .o-activities__card .o-card__photo img,
+			.o-activities__box:nth-child(odd) .o-activities__card .o-card__photo img {
+				height: 135px !important;
+			}
+
+			.o-activities__list {
+				margin-top: 35px;
 			}
 			
 		/* --- 03 - Sections --- */
@@ -428,16 +447,16 @@
 
 /* --- 400 PX --- */
 
-@media screen and (max-width: 400px) {
+	@media screen and (max-width: 400px) {
 
-	/* --- 03 - Sections --- */
+		/* --- 03 - Sections --- */
 
-		.o-sidebar__card .o-card__content {
-			width: calc(100% - 130px) !important;
-		}
+			.o-sidebar__card .o-card__content {
+				width: calc(100% - 130px) !important;
+			}
 
-	/* --- 03 - Sections --- */
+		/* --- 03 - Sections --- */
 
-}
+	}
 
 /* --- END 400 PX --- */
