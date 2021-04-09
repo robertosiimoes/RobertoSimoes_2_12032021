@@ -434,6 +434,7 @@
 		.o-activities__card:hover .o-card__photo {
 			opacity: 0.85;
 			transition: all ease-in-out 450ms;
+			width: 100%;
 		}
 
 		.o-activities__card .o-card__box {
@@ -443,10 +444,7 @@
 			margin-bottom: 30px;
 			display: flex;
 			flex-flow: row wrap;
-		}
-
-		.o-activities__card .o-card__box {
-			border-radius: 0 0 18px 18px;
+			border-radius: 18px;
 		}
 
 		.o-activities__box .o-activities__card .o-card__photo img {
