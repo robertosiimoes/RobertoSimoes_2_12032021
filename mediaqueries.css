@@ -306,6 +306,7 @@
 				justify-content: center;
 				width: 100%;
 				text-align: center;
+				order: 1;
 			}
 
 			.l-header__nav ol li {
@@ -317,6 +318,10 @@
 				display: block;
 				padding: 50px 28px;
 				text-decoration: none;
+			}
+
+			.l-header__cta {
+				order: 0;
 			}
 
 			.l-footer__list {
