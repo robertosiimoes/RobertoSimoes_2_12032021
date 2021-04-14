@@ -216,9 +216,124 @@
 
 	/* SEARCH */
 
-		/*.o-search {
-			
-		}*/
+		.o-search__box {
+			display: flex;
+			margin-bottom: 30px;
+			margin-top: 20px;
+		}
+
+		.o-search__bar {
+			border-top: solid 1px var(--grey-light);
+			border-bottom: solid 1px var(--grey-light);
+			border-right: none;
+			border-left: none;
+			padding: 15px;
+		}
+
+		.o-search__box::placeholder {
+			color: var(--dark);
+			opacity: 1;
+			font-size: 14px;
+		}
+
+		.o-search__box::before {
+			content: "\f3c5";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--grey-light);
+			padding: 20px;
+			border-radius: 15px 0 0 15px;
+			height: 52px;
+		}
+
+		.o-search__button {
+			border: none;
+			background: var(--blue);
+			color: var(--light);
+			padding: 18px;
+			border-radius: 0 15px 15px 0;
+			font-size: 14px;
+		}
+
+		.o-search__filters {
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.o-filters__title {
+			font-size: 18px;
+			font-weight: 700;
+			margin-right: 30px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+		}
+
+		.o-filters__container {
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.o-filter {
+			margin-right: 25px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			border: 2px solid var(--dark-shadow);
+			border-radius: 50px;
+			font-weight: 700;
+		}
+
+		.o-filter__icon {
+			background-color: var(--blue-light);
+			color: var(--blue);
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+			margin: -2px;
+		}
+
+		.o-filter__title {
+			font-weight: 700;
+			padding: 14px;
+		}
+
+		.o-search__info {
+			display: flex;
+			flex-flow: row wrap;
+			margin-top: 35px;
+		}
+
+		.o-search__info::before {
+			content: "\f129";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--light);
+			padding: 5px;
+			border-radius: 50px;
+			border: solid 1px var(--grey-light);
+			height: 25px;
+			width: 25px;
+			color: var(--blue);
+		}
+
+		.o-search__info p {
+			margin: 0;
+			margin-left: 12px;
+			padding: 6px;
+		}
+
+
 
 	/* END SEARCH */
 
