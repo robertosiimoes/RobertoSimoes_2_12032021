@@ -256,6 +256,7 @@
 			padding: 18px;
 			border-radius: 0 15px 15px 0;
 			font-size: 14px;
+			cursor: pointer;
 		}
 
 		.o-search__filters {
@@ -285,6 +286,15 @@
 			border: 2px solid var(--dark-shadow);
 			border-radius: 50px;
 			font-weight: 700;
+			cursor: pointer;
+			transition: all 350ms ease-in-out;
+		}
+
+		.o-filter:hover {
+			background-color: var(--blue);
+			border: 2px solid var(--blue);
+			color: var(--light);
+			transition: all 350ms ease-in-out;
 		}
 
 		.o-filter__icon {
@@ -294,10 +304,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 50px;
-			width: 50px;
+			height: 52px;
+			width: 52px;
 			border-radius: 50px;
 			margin: -2px;
+			transform: translateX(-2px);
 		}
 
 		.o-filter__title {
