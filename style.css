@@ -137,22 +137,11 @@
 			display: block;
 			padding: 50px 28px;
 			text-decoration: none;
-		}
-
-		.l-header__nav ol li a:hover,
-		.l-header__nav ol li a[data-state="is-active"]:hover,
-		.l-header__cta:hover {
-			background-color: var(--blue-light);
-			color: var(--blue-darken);
-			transition: all ease-in-out 450ms;
-		}
-
-		.l-header__nav ol li a[data-state="is-active"] {
-			color: var(--blue);
 			position: relative;
 		}
 
-		.l-header__nav ol li a[data-state="is-active"]::before {
+		.l-header__nav ol li a::before,
+		.l-header__cta::before {
 			content: "";
 			display: block;
 			height: 2px;
@@ -161,6 +150,14 @@
 			top: 0;
 			left: 0;
 			background-color: var(--blue);
+			color: var(--blue);
+			opacity: 0;
+		}
+
+		.l-header__nav ol li a:hover::before,
+		.l-header__cta:hover::before {
+			opacity: 1;
+			transition: all ease-in-out 450ms;
 		}
 
 		.l-header__cta {
@@ -283,7 +280,7 @@
 			display: flex;
 			align-items: center;
 			text-align: center;
-			border: 2px solid var(--dark-shadow);
+			border: 2px solid var(--grey-light);
 			border-radius: 50px;
 			font-weight: 700;
 			cursor: pointer;
