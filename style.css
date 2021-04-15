@@ -226,6 +226,9 @@
 			border-left: none;
 			padding: 15px;
 			height: 50px;
+
+			border-radius: 0;
+			-webkit-appearance: none;
 		}
 
 		.o-search__box::placeholder {
