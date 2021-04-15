@@ -17,8 +17,7 @@
 		/* --- 01 - Général --- */
 
 			.l-grid {
-				padding-left: 20px;
-				padding-right: 20px;
+				padding: 0 20px !important;
 				max-width: 100%;
 			}
 	
@@ -30,6 +29,8 @@
 
 			.l-footer__container {
 				justify-content: flex-start;
+				padding-top: 50px !important;
+				padding-bottom: 50px !important;
 			}
 
 			.l-footer__list:nth-child(even) {
@@ -219,6 +220,10 @@
 				padding-left: 15px;
 			}
 
+			.o-filter {
+				margin-top: 15px;
+			}
+
 		/* --- 03 - Sections --- */
 	}
 
@@ -300,6 +305,16 @@
 
 			.l-header__container {
 				flex-flow: row wrap;
+				padding: 0 !important;
+			}
+
+			.l-header__logo {
+				padding-left: 20px;
+			}
+
+			.l-header__cta {
+				order: 0;
+				padding: 45px 20px !important;
 			}
 
 			.l-header__nav {
@@ -314,14 +329,26 @@
 			}
 
 			.l-header__nav ol li a {
-				color: var(--dark);
 				display: block;
-				padding: 50px 28px;
+				padding: 13px 28px;
 				text-decoration: none;
 			}
 
-			.l-header__cta {
-				order: 0;
+			.l-header__nav ol li a:not([data-state="is-active"])::before {
+				opacity: 1;
+				bottom: 0;
+				top: 100%;
+				background-color: var(--grey-light);
+			}
+
+			.l-header__nav ol li a[data-state="is-active"]::before {
+				opacity: 1;
+				bottom: 0;
+				top: 100%;
+			}
+
+			.l-header__nav ol li a:hover::before {
+				background-color: var(--dark);
 			}
 
 			.l-footer__list {
@@ -398,6 +425,10 @@
 				border-radius: 18px 0 0 18px !important;
 			}
 
+			.o-search {
+				padding-top: 35px;
+			}
+
 		/* --- 03 - Sections --- */
 
 	}
@@ -458,6 +489,24 @@
 
 			.o-sidebar__card .o-card__content {
 				width: calc(100% - 130px) !important;
+			}
+
+			.o-search__bar {
+				padding: 15px 10px;
+				margin-right: -10px;
+			}
+
+			.o-search__button {
+				border-radius: 15px;
+				padding: 15px;
+			}
+
+			.o-search__button i {
+				display: flex;
+			}
+
+			.o-search__button span {
+				display: none;
 			}
 
 		/* --- 03 - Sections --- */

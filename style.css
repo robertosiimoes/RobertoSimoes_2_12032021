@@ -225,6 +225,7 @@
 			border-right: none;
 			border-left: none;
 			padding: 15px;
+			height: 50px;
 		}
 
 		.o-search__box::placeholder {
@@ -243,7 +244,7 @@
 			background: var(--grey-light);
 			padding: 20px;
 			border-radius: 15px 0 0 15px;
-			height: 52px;
+			height: 50px;
 		}
 
 		.o-search__button {
@@ -254,6 +255,12 @@
 			border-radius: 0 15px 15px 0;
 			font-size: 14px;
 			cursor: pointer;
+		}
+
+		.o-search__button i {
+			display: none;
+			align-items: center;
+			justify-content: center;
 		}
 
 		.o-search__filters {
@@ -301,8 +308,8 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 52px;
-			width: 52px;
+			height: 50px;
+			width: 50px;
 			border-radius: 50px;
 			margin: -2px;
 			transform: translateX(-2px);
